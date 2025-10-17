@@ -1,0 +1,27 @@
+[package]
+name = "curfew"
+version = "0.1.0"
+edition = "2024"
+authors = ["CryptoPatrick <cryptopatrick@gmail.com>"]
+
+###############################################################################
+description = ""A deadline-aware fork-join model where multiple threads run in parallel, but only those that finish before a specified absolute clock time are joined and their results collected. Threads still running after the deadline are ignored or left to finish in the background, allowing time-bounded parallelism without blocking past the deadline.""
+documentation = "https://docs.rs/curfew"
+homepage = "https://github.com/cryptopatrick/curfew"
+repository = "https://github.com/cryptopatrick/curfew"
+readme = "README.md"
+keywords = ["<KEYWORD1>", "<KEYWORD2>" ]
+license = "MIT"
+autotests = false
+
+###############################################################################
+[lib]
+name = "curfew"
+path = "src/lib.rs"
+
+[[test]]
+name = "tests"
+path = "tests/test.rs"
+
+###############################################################################
+[dependencies]
